@@ -5,6 +5,7 @@ public class Test implements Comparable<Test> {
 	@Override
 	public int compareTo(Test o) {
 		// TODO Auto-generated method stub
+		System.out.println("Sachin");
 		return s.compareTo(o.s);
 	}
 	
