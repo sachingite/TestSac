@@ -31,12 +31,13 @@ public class JavaScriptExecutor {
 		//engine.eval("var test = new java.lang.String(\"Sachin\"); print(test); var input = 10; var decimalPlaces = 2; var output = input.toExponential(decimalPlaces); ");
 		
 		Bindings binding = engine.getBindings(ScriptContext.ENGINE_SCOPE) ;
-		binding.put("string", new java.lang.String("Sachin"));
-		engine.eval("function test() {return \"Sachin\"}");
+		binding.put("test1", new java.lang.String("Sachin1"));
+		engine.eval("var abc ; function test() {abc = new java.lang.String(test1); print(abc); "
+				+ "return test1;}");
 		engine.eval("print(test());");
 		
 		
-		System.out.println(engine.get("string"));
+		System.out.println(engine.get("abc"));
 
 	}
 
