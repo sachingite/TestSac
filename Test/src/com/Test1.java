@@ -9,8 +9,8 @@ public class Test1 {
   public static void main(String[] args) {
     System.out.println("This is test");
     
-    Comparator<Test> t = (Test a, Test b) -> { return a.compareTo(b);};
-    Set<Test> test = new TreeSet<Test>(t);
+   /* Comparator<Test> t = (Test a, Test b) -> { return a.compareTo(b);};
+    Set<Test> test = new TreeSet<Test>(t);*/
     
     
   }
